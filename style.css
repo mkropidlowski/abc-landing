@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+
+.container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    background-color: rgb(255, 190, 68);
+    text-align: center;
+    position: relative;
+    width:35%;
+    top:40px;
+    padding: 20px;
+    height: 20px;
+    transform: skewX(-25deg);  
+}
+
+.menu-list li {
+    display: inline-block;
+    transform: skewX(25deg);
+
+}
+
+.menu-list li a {
+    position: relative;
+    text-decoration: none;
+    color: #000;
+    margin-left: 25px;
+    font-size:18px;   
+    transition: 0.5s;
+    display: block;
+
+
+}
+
+.menu-list li a::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 3px;
+    top: 100%;
+    left: 0;
+    background-color: #ebebeb;
+    transition: transform 0.3s;
+    transform: scaleX(0);
+    transform-origin: right;
+}
+
+
+.menu-list li a:hover {
+    color:#fff;
+}
+
+.menu-list li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+
+.main-section { 
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+    margin:70px 0 200px 0;
+}
+
+.main-descritpion {
+    position: relative;
+    top:100px;
+    left: 100px;
+}
+
+.main-paragraph {
+    margin:30px 0 0 15px;
+    font-size: 20px;
+    width: 70%;
+
+}
+
+.main-img {
+    position: relative;
+    left: -90px;
+}
+
+.contact-us {
+    width:250px;
+    padding: 15px;
+    border: 0;
+    background-color: rgb(255, 190, 68);
+    border-radius: 5px;
+    position: relative;
+    left: 300px;
+    top:30px;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.contact-us:hover {
+    cursor: pointer;
+}
+
+.contact-us a {
+    text-decoration: none;
+    color:#fff;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.about {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: whitesmoke;
+    height: 100vh;
+    
+}
+
+.list-header {
+    font-weight: bold;
+    text-decoration: underline;
+    padding: 10px;
+}
+.about-school {
+    width: 40%;
+    text-align: justify;
+}
+
+.about-header {
+    background-color: rgb(255, 231, 188);;
+    padding: 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    
+}
+
+.exam-img {
+    width: 400px;
+}
+.benefits-list li {
+    padding: 5px;
+}
+
+.photo-gallery {
+    width: 50%;
+    margin: auto;
+    height: 100vh;
+}
+
+.splide {
+    margin:150px 0 150px;
+}
+
+.splide__track{
+    text-align: center;
+}
+
+.opinions {
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.opinion-box {
+    padding-top: 10px;
+    text-align: center;
+    margin-top: 100px;
+    width: 320px;
+}
+
+.opinion-box p {
+    margin-top: 10px;
+}
+
+.stars {
+    color: gold;
+}
+
+
+.footer {
+    width: 100%;
+    height: 70vh;
+    background-color: rgb(252, 252, 252);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.adress {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.map img {
+    border-radius: 5px;
+}
+
+.footer-img {
+    display: flex;
+    margin: 0 auto 20px;
+    
+}
+
+.open-time ul{
+    margin-top: 10px;
+}
+
+.open-time ul li {
+    margin-top: 5px;
+}
+
+
+
+
